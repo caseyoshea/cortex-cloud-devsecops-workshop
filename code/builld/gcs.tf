@@ -4,7 +4,7 @@ provider "google" {
 }
 
 resource "google_storage_bucket" "example" {
-  name          = "demo-${random_id.rand_suffix.hex}"
+  name          = "mongo-${random_id.rand_suffix.hex}"
   location      = "us-central1"
   force_destroy = true
 
