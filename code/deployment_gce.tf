@@ -3,7 +3,7 @@ provider "google" {
   region  = var.region
 }
 
-# VPC
+# VPC   test
 resource "google_compute_network" "web_vpc" {
   name                    = "${local.resource_prefix}-vpc"
   auto_create_subnetworks = false
